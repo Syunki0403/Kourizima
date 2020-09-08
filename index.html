@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>古宇利島</title>
+    <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-visual">
+        <img class="kourizima1" src="http://kourijima.info/wp-content/uploads/2014/09/topimage1.jpg" alt="">
+        <img class="kourizima2" src="http://kourijima.info/wp-content/uploads/2014/09/topimage2.jpg" alt="">
+        <img class="kourizima3" src="http://kourijima.info/wp-content/uploads/2014/09/topimage3.jpg" alt="">
+        <img class="kourizima4" src="http://kourijima.info/wp-content/uploads/2014/09/topimage4.jpg" alt="">
+    </div>
+    <div class="menu">
+        <div class="logo">
+            <img src="http://kourijima.info/wp-content/uploads/2013/08/kourijimaLogo.png" alt="ロゴ">
+        </div>
+        <nav>
+            <ul class="menu_list">
+                <li><a href="#">古宇利島について</a></li>
+                <li><a href="#">島の地図</a></li>
+                <li><a href="#">島のビーチ</a></li>
+                <li><a href="#">島の日々</a></li>
+                <li><a href="#">島へのアクセス</a></li>
+                <li><a href="#">島の情報</a></li>
+                <li><a href="#">宿の予約</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(function () {
+            var setImg = '#main-visual';
+            var fadeSpeed = 3000;
+            var switchDelay = 7000;
+
+            $(setImg).children('img').css({ opacity: '0' });
+            $(setImg + ' img:first').stop().animate({ opacity: '1', zIndex: '1' }, fadeSpeed);
+
+            setInterval(function () {
+                $(setImg + ' :first-child').animate({ opacity: '0' }, fadeSpeed).next('img').animate({ opacity: '1' }, fadeSpeed).end().appendTo(setImg);
+            }, switchDelay);
+        });
+    </script>
+</body>
+
+</html>

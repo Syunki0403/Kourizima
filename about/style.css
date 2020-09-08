@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+.reserve {
+    margin: 10px 0 25px 0;
+}
+
+.reserve_area {
+    border-top: dashed 1px #0095d9;
+    padding-bottom: 20px;
+}
+
+.reserve ul {
+    text-align: center;
+}
+
+.reserve li {
+    margin-right: 5px;
+    margin-bottom: 7px;
+    display: inline-block;
+    text-align: center;
+}
+
+.reserve a {
+    display: block;
+    border: solid 1px #0095d9;
+    border-radius: 3px;
+    padding: 10px;
+    color: #0095d9;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 998px){
+    .article img {
+        width: 100%;
+    }
+}

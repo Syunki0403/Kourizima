@@ -1,0 +1,200 @@
+@charset 'utf-8';
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", serif;
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(http://kourijima.info/wp-content/uploads/2013/08/backgroundimage.jpg);
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    background-image: url(http://kourijima.info/wp-content/uploads/2013/09/headerBackground.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin: 20px auto 0;
+    width: 970px;
+    background-color: white;
+    box-shadow: 1.5px 1.5px 2px #999;
+    border-radius: 5px;
+}
+
+footer {
+    border-top: dashed 1px #666666;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-weight: normal;
+    padding-top: 40px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 14px 0 10px 0;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    color: #666666;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.logo {
+    width: 181px;
+}
+
+.menu_list {
+    margin-top: 40px;
+    padding-left: 140px;
+}
+
+.article {
+    margin: 0 51px;
+    padding-bottom: 10px;
+}
+
+.menu_list ul {
+    display: flex;
+}
+
+.menu_list li {
+    padding-right: 15px;
+}
+
+.menu_list a {
+    color: white;
+    font-size: 15px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.logo img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo a {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+footer a:hover {
+    opacity: 0.5;
+    border-bottom: solid 1px ;
+}
+
+.logo a:hover {
+    opacity: 0.5;
+}
+
+.menu_list a:hover {
+    color: #c0c0c0;
+}
+
+.reserve a:hover {
+    background-color: #0095d9;
+    color: white;
+}
+
+@media screen and (max-width: 998px){
+    header {
+        display: block;
+    }
+
+    main {
+        width: 95%;
+    }
+    
+    .menu_list {
+        margin: 0;
+        padding: 10px 0 15px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .article {
+        margin: 0;
+        padding: 0 20px;
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 643px){
+    main {
+        width: 100%;
+    }
+
+    .mobile_menu {
+        display: block;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-top: solid 1px white;
+    }
+
+    .mobile_nav {
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: solid 1px white;
+    }
+
+    .mobile_menu_list {
+        display: none;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    .mobile_menu_list li {
+        padding: 10px 0;
+        border-bottom: solid 1px white;
+    }
+}

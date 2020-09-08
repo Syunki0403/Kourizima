@@ -1,0 +1,150 @@
+@charset 'utf-8';
+
+html {
+    height: 100%;
+    font-family: YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", serif;
+    font-size: 15px;
+}
+
+body {
+    height: 100%;
+    /*background-image: url(http://kourijima.info/wp-content/uploads/2014/09/topimage1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 0 0 35px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0 15px 0 0;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.menu {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    position: relative;
+}
+
+.logo {
+    width: 205px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+li:last-child {
+    padding-right: 0;
+}
+
+.menu_list a:hover {
+    color: #c0c0c0;
+}
+
+#main-visual {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: absolute;
+}
+
+#main-visual img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 998px){
+    ul {
+        margin: 0 auto;
+        padding-top: 10px;
+        justify-content: center;
+    }
+
+    .menu {
+        height: 135px;
+        width: 100%;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        width: 170px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    #main-visual img {
+        width: 1500px;
+        height: 1300px;
+        left: -18%;
+        transform: translateX(-18%);
+    }
+
+}
+
+@media screen and (max-width: 643px){
+    body {
+        display: block;
+    }
+
+    ul {
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 0;
+    }
+
+    li {
+        width: 100%;
+        border-top: solid 1px white;
+        text-align: center;
+    }
+
+    a {
+        padding: 15px 0;
+    }
+
+    .logo {
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        background-color: transparent;
+    }
+
+    li:last-child{
+        border-bottom: solid 1px white;
+    }
+
+    #main-visual img {
+        width: 800px;
+        height: 880px;
+        left: -18%;
+        transform: translateX(-18%);
+    }
+}

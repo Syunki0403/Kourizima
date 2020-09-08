@@ -1,0 +1,69 @@
+@charset 'utf-8';
+
+ol {
+    margin-left: 35px;
+}
+
+.beach {
+    display: flex;
+} 
+
+.reserve {
+    margin:10px 0 25px 0;
+}
+
+.reserve_area {
+    border-top: dashed 1px #0095d9;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.beach img {
+    width: 50%;
+}
+
+.article h3 {
+    text-align: left;
+    margin: 22px 0;
+}
+
+.reserve ul {
+    text-align: center;
+}
+
+.reserve li {
+    margin-right: 5px;
+    margin-bottom: 7px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.reserve a {
+    display: block;
+    border: solid 1px #0095d9;
+    border-radius: 3px;
+    padding: 10px;
+    color: #0095d9;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 998px){
+    .beach img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 643px){
+    ol {
+        margin-left: 20px;
+    }
+    
+    .beach {
+        display: block;
+    } 
+
+    .beach img {
+        width: 100%;
+    }
+}
